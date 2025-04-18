@@ -16,7 +16,6 @@ git add Readme.md
 git commit -m "add readme file"
 ```
 
-
 ## Cloning
 
 We can clone three ways: HTTPS, SSH, Github CLI
@@ -28,7 +27,6 @@ mkdir /workspace/tmp
 cd /workspace/tmp
 ```
 
-
 ### HTTPS
 
 ```sh
@@ -37,7 +35,7 @@ cd GitHub-Examples
 ```
 
 > You'll need to generate a Personal Access Token (PAT)
-https://github.com/settings/token
+> https://github.com/settings/token
 
 You will use the PAT as your password when you login
 
@@ -64,6 +62,7 @@ ssh-add /home/andrew/.ssh/alt-github_id_rsa
 ```
 
 We can test our connection here:
+
 ```
 ssh -T git@github.com
 ```
@@ -90,7 +89,6 @@ gh repo clone andrew-wc-brown/Github-Examples
 
 ## Commits
 
-
 When we want to commit code we can write git commit which will open up the commit edit message in the editor of choice.
 
 ```sh
@@ -98,11 +96,13 @@ git commit
 ```
 
 Set the global editor
+
 ```
 git config --global core.editor emacs
 ```
 
 Make a commit and commit message without opening an editor
+
 ```sh
 git commit -m "add another exclamation"
 ```
@@ -116,6 +116,7 @@ git branch
 ```
 
 Create a new branch
+
 ```
 git branch branch-name
 ```
@@ -125,7 +126,6 @@ Checkout the branch
 ```
 git checkout dev
 ```
-
 
 ## Remotes
 
@@ -173,7 +173,7 @@ git add .
 git reset
 ```
 
-> git reset will revet a git add. 
+> git reset will revet a git add.
 
 ## Status
 
@@ -188,6 +188,7 @@ git status
 The gitconfig file is what stores your global configurations for git such as email, name, editor and more.
 
 Showing the contnets of our .gitconfig file
+
 ```
 git config --list
 ```
