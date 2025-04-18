@@ -14,7 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run Prettier
+      - name: Run Prettier and Commit Changes
         uses: creyD/prettier_action@v4.3
         with:
           prettier_options: '--write .'
+          commit_message: 'chore: format code with Prettier'
