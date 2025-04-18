@@ -14,8 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Run Prettier and Commit Changes
+      - name: Run Prettier
         uses: creyD/prettier_action@v4.3
         with:
-          prettier_options: '--write .'
-          commit_message: 'chore: format code with Prettier'
+          prettier_options: '--write "**/*.{js,ts,json,md}"'  # Only format JS, TS, JSON, and MD files
